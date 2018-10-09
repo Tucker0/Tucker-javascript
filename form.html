@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+
+<body>
+    <form id="nameForm">
+        <p>First name: <input type="text" name="first" value="Aragorn"></p>
+        <p>Middle name: <input type="text" name="middle" value="Elessar"></p>
+        <p>Last name: <input type="text" name="last" value="Telcontar"></p>
+        <input type="button" value="Make name">
+      </form> 
+      
+      <h3 id="name">Name will go here</h3>
+      <script>
+        function makeBetterName (fName, mName, lName) {
+          if (mName.length === 1) {
+            let fullName = fName + " " + mName + ". " + lName;
+            return fullName;
+          } else {
+            let fullName = fName + " " + mName + " " + lName;
+            return fullName;
+          }
+        }
+        </script>
+</body>
+
+</html>
